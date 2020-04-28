@@ -1,7 +1,7 @@
-<ion-header [translucent]="true">
+<ion-header color="primary">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Methode 2
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      <ion-label>{{user.name}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
